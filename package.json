@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "node server.js",
-    "dev" : "node --watch server.js"
+    "test:integration": "mocha tests/integration",
+    "start": "node server.js",
+    "dev": "node --watch server.js"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +17,10 @@
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "postgres": "^3.4.4"
+  },
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.7.0",
+    "supertest": "^7.0.0"
   }
 }
